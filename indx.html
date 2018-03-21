@@ -1,0 +1,101 @@
+<html><head>
+<!-- AdFender script begin --><link rel="stylesheet" type="text/css" media="screen" href="sss.CSS"><link rel="stylesheet" type="text/css" media="screen" href="http://local.adfender.com/adfender/elemhide.css?page=2&amp;url=courses.csail.mit.edu"><link rel="stylesheet" type="text/css" media="screen" href="http://local.adfender.com/adfender/elemhide.css?page=3&amp;url=courses.csail.mit.edu"><link rel="stylesheet" type="text/css" media="screen" href="http://local.adfender.com/adfender/elemhide.css?page=4&amp;url=courses.csail.mit.edu"><script type="text/javascript" src="http://local.adfender.com/adfender/elemhide.js"></script><!-- AdFender script end -->
+	<!-- The title shows up in the browser toolbar -->
+	<title>Shyma's Homepage</title>
+</head>
+
+<body>
+	<!--A header for the page-->
+	<h1>ShymaMohammad</h1>
+
+	<!--My photo-->
+	<img id="photo" src="https://i.ytimg.com/vi/kJ2dr9jAThY/maxresdefault.jpg">	
+
+	<!--Divs and spans can be used to logically and structurally organize your page
+		Here we use divs to separate different sections of the page: about, courses, interests and pet information
+		* divs are block elements and are separated by newlines or breaks in the page
+		* spans are inline elements and are displayed without newlines between them
+	-->
+
+	<!--Each div (and any other tag) can have a class and id.
+		The class can be shared with other tags.
+		The id is unique to this tag.
+		The class and id can be selected by CSS rules to style groups of elements differently.
+	-->
+	<div class="section" id="about">  
+		<!--An h2 header - smaller than the h1 header-->
+		<h2>About</h2>
+
+		<!--<p> tags are paragraphs have newlines before and after them-->
+		<p>Hello World!</p>
+		<!--The <a> tag is a link.
+			The text between the <a> and </a> tags is the displayed text.
+			The href attribute has the link's target URL.-->
+		<p>Hi, I'm Shyma. I love <a href="http://en.wikipedia.org/wiki/User_interface_design">User Interface Design</a>.</p>		
+	</div>
+
+	<div class="section" id="courses">
+		<h2>Courses</h2> 
+		<p>Here are some the courses I am currently tacking:</p>
+
+		<!--Tables can be used to group text or images into rows and columns-->
+		<table>
+			<!--Each <tr> is a row-->
+			<tbody><tr>
+				<!--Each <th> or <td> is a cell.
+					The number of cells in a row determines the number of columns in the table.
+				-->
+				<th>Course Number</th>
+				<th>Course Title</th>
+				<th>Semester Taken</th>
+			</tr>
+			<tr>
+				<!--A <td> or cell can span multiple columns using the colspan attribute-->
+				<td class="enrollheader" colspan="3">For Credit</td>
+			</tr>
+			<!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
+			<tr class="currentlytaking">
+				<td><a CSC440>6.813</a></td>
+				<td>Human Cumputer Interaction</td>
+				<td>Spring 2018</td>
+			</tr>			
+			<tr>
+				<td><a CSC112">6.034</a></td>
+				<td>Artificial Intelligence</td>
+				<td>Spring 2018</td>
+			</tr>
+			<tr>
+				<td><a CSC115">6.006</a></td>
+				<td>Introduction to Algorithms</td>
+				<td>Spring 2018</td>
+			</tr>
+			<tr>
+				<td class="enrollheader" colspan="3">Listener</td>
+			</tr>
+			<tr>
+				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.867/">6.867</a></td>
+				<td>Machine Learning</td>
+				<td>Fall 2013</td>
+			</tr>
+			<tr>
+				<td><a href="http://db.csail.mit.edu/6.830/index.php">6.830</a></td>
+				<td>Database Systems</td>
+				<td>Fall 2012</td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="section" id="interests">
+		<h2>Interests</h2>
+		<!--Spans are displayed inline, but allow you to identify text in CSS rules-->
+		I am interested <span class="serious">HCI</span>, <span class="silly">memes</span>, and <span class="silly">youtube videos</span>.
+	</div>
+
+	
+
+
+	<!--This is the style section.
+		It consists of CSS rules, which could also be included as a separate file.-->
+
+
+</body></html>
